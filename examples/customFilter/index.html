@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="../angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>Name Calculator</title>
+  </head>
+  <body ng-app = "customFilterExample">
+    <h1>Custom Filter</h1>
+    <div ng-controller = "customFilterExampleController">
+      <div>
+        {{sayHello()}}
+      </div>
+      <div>   {{sayHelloWithFilter()}}</div>
+      <div> with ARGS </div>
+
+      <div>
+        {{sayHelloWithFilterArgs()}} <br>
+        {{sayHelloWithFilter() | customArg : "some" : "none"}} <br>
+        {{sayHelloWithFilter() | customArg : "some" : "none" | uppercase}} <br>
+      </div>
+
+    </div>
+  </body>
+</html>
