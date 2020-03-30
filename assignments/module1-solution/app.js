@@ -5,7 +5,7 @@
   .controller('LaunchCheckController', LaunchCheckController);
 
   LaunchCheckController.$inject = ['$scope'];
-  function LaunchCheckController ($scope,$filter){
+  function LaunchCheckController ($scope){
     //Scope variables
     $scope.dishes = "";
     $scope.message = "";
